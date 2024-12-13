@@ -1,0 +1,185 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005bab;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  height: 8vh;
+  width: 100%;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+/* Nav */
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-bar ul li button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0.6em;
+}
+
+.nav-bar ul li button:hover {
+  border-bottom: solid 4px white;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8em;
+}
+
+/* Destaque */
+#destaque {
+  background-image: radial-gradient(#ffff, #c7c7c7);
+  width: 100%;
+}
+
+.frame-destaque {
+  display: flex;
+  padding: 2vh;
+  height: 80vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-destaque {
+  flex: 1;
+  display: flex;
+  height: auto;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.texto-destaque {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.texto-destaque h1 {
+  font-size: 2em;
+}
+
+.button-destaque {
+  background-color: #005bab;
+  color: white;
+  width: 15em;
+  height: 3em;
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 3em;
+  border: none;
+  cursor: pointer;
+}
+
+.button-destaque:hover {
+  background-color: #005096;
+  transform: scale(1.05);
+}
+
+/*Produtos*/
+
+.produtos {
+  padding: 3em;
+  width: 100%;
+  background-color: #555555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.produtos h1 {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+.div-produtos {
+  padding: 2em;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card-produtos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #c7c7c7;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 100%;
+    background-color: #005bab;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .nav-bar ul li {
+    margin: 10px 0;
+  }
+
+  #menu-toggle:checked ~ .nav-bar {
+    display: flex;
+  }
+
+  .frame-destaque {
+    flex-direction: column;
+  }
+}
