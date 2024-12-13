@@ -5,8 +5,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: Arial, sans-serif;
+}
+
+section {
+  scroll-margin-top: 8vh;
 }
 
 /* Header */
@@ -26,6 +35,7 @@ body {
 
 .logo {
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 /* Nav */
@@ -97,7 +107,9 @@ body {
 }
 
 .texto-destaque h1 {
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #005bab;
 }
 
 .button-destaque {
@@ -143,11 +155,34 @@ body {
 }
 
 .card-produtos {
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
   background-color: #c7c7c7;
+  border-radius: 10px;
+}
+
+.card-produtos:hover{
+  transform: scale(1.05);
+}
+
+.card-produtos button{
+  left: 0;
+  bottom: 0;
+  background-color: #005bab;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+
+.card-produtos button:hover{
+  transform: scale(1.03);
+  background-color: #005096;
+}
+
+.card-produtos button a{
+  text-decoration: none;
 }
 
 /* Responsividade */
