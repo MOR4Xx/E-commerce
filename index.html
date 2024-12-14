@@ -2,192 +2,236 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>E-Commerce</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Metadados -->
+    <meta charset="utf-8"> <!-- Define o charset como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Torna a página responsiva -->
+    <title>E-Commerce</title> <!-- Título da página -->
 
-  <meta name="theme-color" content="#fafafa">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Arquivo de estilo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Biblioteca de ícones -->
+
+    <meta name="theme-color" content="#fafafa"> <!-- Define a cor do tema -->
 </head>
 
 <body>
 <main>
-  <header id="header">
-    <div class="logo">
-      <p>InfoNoobs</p>
-    </div>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="logo">
+            <p>InfoNoobs</p> <!-- Nome da loja -->
+        </div>
 
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-      <i class="fas fa-bars"></i>
-    </label>
+        <!-- Menu responsivo -->
+        <input type="checkbox" id="menu-toggle"> <!-- Controle para abrir/fechar o menu -->
+        <label for="menu-toggle" class="hamburger">
+            <i class="fas fa-bars"></i> <!-- Ícone de hambúrguer -->
+        </label>
 
-    <div class="nav-bar" id="nav-bar">
-      <ul>
-        <li>
-          <a href="#destaque">
-            <button class="button-menu">Home</button>
-          </a>
-        </li>
-        <li>
-          <a href="#products">
-            <button class="button-menu">Produtos</button>
-          </a>
-        </li>
-        <li>
-          <button class="button-menu" id="cart">Carrinho</button>
-        </li>
-      </ul>
-    </div>
+        <!-- Navegação -->
+        <div class="nav-bar" id="nav-bar">
+            <ul>
+                <li>
+                    <a href="#destaque">
+                        <button class="button-menu">Home</button> <!-- Botão para voltar ao topo -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#products">
+                        <button class="button-menu">Produtos</button> <!-- Botão para navegar até os produtos -->
+                    </a>
+                </li>
+                <li>
+                    <button class="button-menu" id="cart">Carrinho</button> <!-- Botão para abrir o carrinho -->
+                </li>
+            </ul>
+        </div>
 
-    <div class="cart-menu" id="cart-menu">
-      <table id="cart-table">
-        <thead>
-        <tr><th>Nome</th><th>Preço</th><th>Remover</th> </tr>
-        </thead>
-        <tbody>
+        <!-- Carrinho -->
+        <div class="cart-menu" id="cart-menu">
+            <table id="cart-table">
+                <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Remover</th>
+                </tr> <!-- Cabeçalho da tabela do carrinho -->
+                </thead>
+                <tbody>
+                <!-- Produtos adicionados ao carrinho serão listados aqui -->
+                </tbody>
+            </table>
+            <p id="price-cart">Valor total: R$00,00</p> <!-- Mostra o valor total -->
+            <button id="finish">Finalizar Compra</button> <!-- Botão para finalizar compra -->
+        </div>
+    </header>
 
-        </tbody>
-      </table>
-      <p id="price-cart">Valor total: R$00,00</p>
-      <button id="finish">Finalizar Compra</button>
-    </div>
-  </header>
+    <!-- Seção de destaque -->
+    <section id="destaque">
+        <div class="frame-destaque">
+            <div class="text-destaque">
+                <h1>InfoNoobs</h1> <!-- Nome da loja -->
+                <p>A loja mais completa de artigos gamers!</p>
+                <p>Somos Realistas e não te passamos para trás</p>
+                <p>Sinceridade é nosso forte!</p>
+                <a href="#products">
+                    <button class="button-destaque">Ver Produtos</button> <!-- Botão para rolar até os produtos -->
+                </a>
+            </div>
+            <img src="img/gaming-msi-header.png" alt="" class="img-destaque"> <!-- Imagem de destaque -->
+        </div>
+    </section>
 
-  <section id="destaque">
-    <div class="frame-destaque">
-      <div class="text-destaque">
-        <h1>InfoNoobs</h1>
-        <p>A loja mais completa de artigos gamers!</p>
-        <p>Somos Realistas e não te passamos para trás</p>
-        <p>Sinceridade é nosso forte!</p>
-        <a href="#products">
-          <button class="button-destaque">Ver Produtos</button>
-        </a>
-      </div>
-      <img src="img/gaming-msi-header.png" alt="" class="img-destaque">
+    <!-- Seção de produtos -->
+    <section class="products" id="products">
+        <h1>Produtos</h1> <!-- Título da seção -->
 
-    </div>
-  </section>
+        <div class="div-products">
+            <!-- Cartões de produtos -->
+            <!-- Produto 1 -->
+            <div class="card-products">
+                <img src="img/products/product-1.png"> <!-- Imagem do produto -->
+                <h3>Notebook simples</h3>
+                <p>Notebook simples, 8gb ram, 256gb, i3-12400.</p>
+                <p>R$ 3399,00</p>
+                <button class="button-card">Adicionar Carrinho</button> <!-- Botão para adicionar ao carrinho -->
+            </div>
 
-  <section class="products" id="products">
-    <h1>Produtos</h1>
+            <!-- Produto 2 -->
+            <div class="card-products">
+                <img src="img/products/product-2.png">
+                <h3>Notebook Intermediario</h3>
+                <p>Notebook intermediário 16gb ram, 512gb, i5-11400.</p>
+                <p>R$ 4101,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
 
-    <div class="div-products">
-      <div class="card-products">
-        <img src="img/products/product-1.png">
-        <h3>Notebook simples</h3>
-        <p>Notebook simples, 8gb ram, 256gb, i3-12400.</p>
-        <p>R$ 3399,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-2.png">
-        <h3>Notebook Intermediario</h3>
-        <p>Notebook intermediario 16gb ram, 512gb, i5-11400.</p>
-        <p>R$ 4101,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-3.png">
-        <h3>Notebook G15</h3>
-        <p>G15, 16gb ram, i5-12400h, 512gb, rtx 4050 4gb.</p>
-        <p>R$ 5500,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-4.png">
-        <h3>Kit de perifericos Gamer</h3>
-        <p>Kit com mouse, teclado e headset, RGB</p>
-        <p>R$ 200,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-5.png">
-        <h3>Placa de Video MSI Gtx 1650</h3>
-        <p>Placa de video GTX 1650 4gb vram, dual fan</p>
-        <p>R$ 1300,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-6.png">
-        <h3>Controle DualSense Playstation 5</h3>
-        <p>Controle ps5 dual sense oliginal</p>
-        <p>R$ 400,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-7.png">
-        <h3>Cadeira gamer</h3>
-        <p>Cadeira gamer duvidosa, prejudicial para sua coluna</p>
-        <p>R$ 00,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-8.png">
-        <h3>Iphone 14 Pro Max 256gb</h3>
-        <p>Smartphone de grife, não compensa o dinheiro que vale</p>
-        <p>R$ 7500,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-9.png">
-        <h3>Galaxy s23 Ultra 256gb</h3>
-        <p>Smarphone de ultima geração, camera boa</p>
-        <p>R$ 3500,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-10.png">
-        <h3>Asus ROG Gamer 1tb</h3>
-        <p>Extremamente potente, mas nenhum jogo mobile precisa disso.</p>
-        <p>R$ 5000,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-11.png">
-        <h3>Smartphone Xiaomi Poco x999</h3>
-        <p>Celular parece uma camer dos anos 2000</p>
-        <p>R$ 1900,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-12.png">
-        <h3>Xbox Series X 1tb</h3>
-        <p>Console de boa qualidade, ultimamente melhor que o ps5</p>
-        <p>R$ 4500,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-13.png">
-        <h3>Volante de simulador</h3>
-        <p>Volante e pedais pra voce imaginar que é piloto de F1</p>
-        <p>R$ 1500,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-14.png">
-        <h3>Playstation 5</h3>
-        <p>Console exelente se não fosse a Sony que não lança jogo descente</p>
-        <p>R$ 4000,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-      <div class="card-products">
-        <img src="img/products/product-15.png">
-        <h3>Pc gamer com RGB</h3>
-        <p>Provavelmente uma bomba que o vendedor quer te passar pra tras</p>
-        <p>R$ 4000,00</p>
-        <button class="button-card">Adicionar Carrinho</button>
-      </div>
-    </div>
-  </section>
+            <!-- Produto 3 -->
+            <div class="card-products">
+                <img src="img/products/product-3.png">
+                <h3>Notebook G15</h3>
+                <p>G15, 16gb ram, i5-12400h, 512gb, rtx 4050 4gb.</p>
+                <p>R$ 5500,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="card-products">
+                <img src="img/products/product-4.png">
+                <h3>Kit de perifericos Gamer</h3>
+                <p>Kit com mouse, teclado e headset, RGB</p>
+                <p>R$ 200,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="card-products">
+                <img src="img/products/product-5.png">
+                <h3>Placa de Video MSI Gtx 1650</h3>
+                <p>Placa de video GTX 1650 4gb vram, dual fan</p>
+                <p>R$ 1300,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="card-products">
+                <img src="img/products/product-6.png">
+                <h3>Controle DualSense Playstation 5</h3>
+                <p>Controle ps5 dual sense oliginal</p>
+                <p>R$ 400,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 7 -->
+            <div class="card-products">
+                <img src="img/products/product-7.png">
+                <h3>Cadeira gamer</h3>
+                <p>Cadeira gamer duvidosa, prejudicial para sua coluna</p>
+                <p>R$ 00,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="card-products">
+                <img src="img/products/product-8.png">
+                <h3>Iphone 14 Pro Max 256gb</h3>
+                <p>Smartphone de grife, não compensa o dinheiro que vale</p>
+                <p>R$ 7500,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 9 -->
+            <div class="card-products">
+                <img src="img/products/product-9.png">
+                <h3>Galaxy s23 Ultra 256gb</h3>
+                <p>Smarphone de ultima geração, camera boa</p>
+                <p>R$ 3500,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 10 -->
+            <div class="card-products">
+                <img src="img/products/product-10.png">
+                <h3>Asus ROG Gamer 1tb</h3>
+                <p>Extremamente potente, mas nenhum jogo mobile precisa disso.</p>
+                <p>R$ 5000,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 11 -->
+            <div class="card-products">
+                <img src="img/products/product-11.png">
+                <h3>Smartphone Xiaomi Poco x999</h3>
+                <p>Celular parece uma camer dos anos 2000</p>
+                <p>R$ 1900,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 12 -->
+            <div class="card-products">
+                <img src="img/products/product-12.png">
+                <h3>Xbox Series X 1tb</h3>
+                <p>Console de boa qualidade, ultimamente melhor que o ps5</p>
+                <p>R$ 4500,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 13 -->
+            <div class="card-products">
+                <img src="img/products/product-13.png">
+                <h3>Volante de simulador</h3>
+                <p>Volante e pedais pra voce imaginar que é piloto de F1</p>
+                <p>R$ 1500,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 14 -->
+            <div class="card-products">
+                <img src="img/products/product-14.png">
+                <h3>Playstation 5</h3>
+                <p>Console exelente se não fosse a Sony que não lança jogo descente</p>
+                <p>R$ 4000,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+
+            <!-- Produto 15 -->
+            <div class="card-products">
+                <img src="img/products/product-15.png">
+                <h3>Pc gamer com RGB</h3>
+                <p>Provavelmente uma bomba que o vendedor quer te passar pra tras</p>
+                <p>R$ 4000,00</p>
+                <button class="button-card">Adicionar Carrinho</button>
+            </div>
+        </div>
+    </section>
 </main>
+
+<!-- Rodapé -->
 <footer>
-  © 2024 Jorge Afonso
+    © 2024 Jorge Afonso <!-- Direitos autorais -->
 </footer>
 
+<!-- Script externo -->
 <script src="js/app.js"></script>
 </body>
-
-</html>

@@ -1,312 +1,312 @@
-/* Global */
+/* Reset básico e configurações iniciais */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove espaçamentos padrão */
+  box-sizing: border-box; /* Inclui bordas e padding no cálculo do tamanho total */
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Suaviza o comportamento de rolagem */
 }
 
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
 }
 
 section {
-  scroll-margin-top: 8vh;
+  scroll-margin-top: 8vh; /* Adiciona margem ao topo para facilitar a navegação ao ancorar */
 }
 
-/* Header */
+/* Estilo do cabeçalho */
 #header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #005bab;
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 99;
-  height: 8vh;
-  width: 100%;
-  color: white;
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaçamento entre os itens */
+  align-items: center; /* Centraliza os itens verticalmente */
+  background-color: #005bab; /* Fundo azul */
+  padding: 10px 20px; /* Espaçamento interno */
+  position: sticky; /* Fixa o cabeçalho no topo */
+  top: 0; /* Sempre no topo */
+  z-index: 99; /* Prioridade de exibição */
+  height: 8vh; /* Altura fixa */
+  width: 100%; /* Largura total */
+  color: white; /* Texto branco */
 }
 
 .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.5em; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
 }
 
-/* Nav */
+/* Estilo da barra de navegação */
 .nav-bar {
-  display: flex;
+  display: flex; /* Layout flexível */
 }
 
 .nav-bar ul {
-  display: flex;
-  list-style: none;
-  gap: 10px;
+  display: flex; /* Itens em linha */
+  list-style: none; /* Remove estilo padrão da lista */
+  gap: 10px; /* Espaçamento entre itens */
 }
 
 .nav-bar ul li button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.2em;
-  cursor: pointer;
-  padding: 0.6em;
+  background: none; /* Remove o fundo */
+  border: none; /* Remove bordas */
+  color: white; /* Texto branco */
+  font-size: 1.2em; /* Tamanho da fonte */
+  cursor: pointer; /* Define ponteiro como clicável */
+  padding: 0.6em; /* Espaçamento interno */
 }
 
 .nav-bar ul li button:hover {
-  border-bottom: solid 4px white;
+  border-bottom: solid 4px white; /* Sublinhar no hover */
 }
 
-/*Hamburguer*/
+/* Menu responsivo com ícone hambúrguer */
 #menu-toggle {
-  display: none;
+  display: none; /* Esconde o checkbox */
 }
 
 .hamburger {
-  display: none;
-  cursor: pointer;
-  font-size: 1.8em;
+  display: none; /* Esconde o ícone por padrão */
+  cursor: pointer; /* Define ponteiro como clicável */
+  font-size: 1.8em; /* Tamanho do ícone */
 }
 
-/*Carrinho*/
-
-.cart-menu{
-  display: none;
-  width: 40vw;
-  height: auto;
-  background-color: #ffffff;
-  top: 8vh;
-  right: 0;
-  position: absolute;
-  z-index: 10;
-  border-radius: 0 0 10px 10px;
+/* Estilo do menu do carrinho */
+.cart-menu {
+  display: none; /* Escondido por padrão */
+  width: 40vw; /* Largura do menu */
+  height: auto; /* Altura ajustável */
+  background-color: #ffffff; /* Fundo branco */
+  top: 8vh; /* Distância do topo */
+  right: 0; /* Alinhado à direita */
+  position: absolute; /* Posição absoluta */
+  z-index: 10; /* Prioridade de exibição */
+  border-radius: 0 0 10px 10px; /* Bordas arredondadas na parte inferior */
 }
 
 .cart-menu table {
-  width: 100%;
-  margin-bottom: 20px;
-  max-height: 300px;
-  overflow-y: auto;
+  width: 100%; /* Largura total */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  max-height: 300px; /* Altura máxima */
+  overflow-y: auto; /* Habilita rolagem vertical */
 }
 
 .cart-menu tbody {
-  display: block;
-  max-height: 200px;
-  overflow-y: auto;
+  display: block; /* Exibe como bloco */
+  max-height: 200px; /* Altura máxima */
+  overflow-y: auto; /* Habilita rolagem vertical */
 }
 
 .cart-menu tr {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
+  display: table; /* Exibe como tabela */
+  width: 100%; /* Largura total */
+  table-layout: fixed; /* Layout fixo */
 }
 
 .cart-menu th, .cart-menu td {
-  padding: 10px;
-  color: black;
-  text-align: left;
+  padding: 10px; /* Espaçamento interno */
+  color: black; /* Texto preto */
+  text-align: left; /* Alinha texto à esquerda */
 }
 
 .cart-menu th {
-  background-color: #005bab;
-  color: #ffffff;
+  background-color: #005bab; /* Fundo azul */
+  color: #ffffff; /* Texto branco */
 }
 
 .cart-menu button {
-  background-color: #005bab;
-  color: #ffffff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: #005bab; /* Fundo azul */
+  color: #ffffff; /* Texto branco */
+  border: none; /* Remove borda */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Define ponteiro como clicável */
 }
 
 .cart-menu button:hover {
-  background-color: #005096;
+  background-color: #005096; /* Escurece o fundo no hover */
 }
 
-#price-cart{
-  color: black;
-  font-weight: bold;
-  margin-left: 5px;
-  font-size: 1.5em;
+#price-cart {
+  color: black; /* Texto preto */
+  font-weight: bold; /* Negrito */
+  margin-left: 5px; /* Margem à esquerda */
+  font-size: 1.5em; /* Tamanho da fonte */
 }
 
-#finish{
-  padding: 5px;
-  background-color: #005bab;
-  border-radius: 10px;
-  border: none;
-  font-weight: bold;
-  font-size: 1.2em;
+#finish {
+  padding: 5px; /* Espaçamento interno */
+  background-color: #005bab; /* Fundo azul */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: none; /* Remove borda */
+  font-weight: bold; /* Negrito */
+  font-size: 1.2em; /* Tamanho da fonte */
 }
 
-/* Destaque */
+/* Estilo da seção de destaque */
 #destaque {
-  background-image: radial-gradient(#ffff, #c7c7c7);
-  width: 100%;
+  background-image: radial-gradient(#ffff, #c7c7c7); /* Gradiente radial */
+  width: 100%; /* Largura total */
 }
 
 .frame-destaque {
-  display: flex;
-  padding: 2vh;
-  height: 80vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Layout flexível */
+  padding: 2vh; /* Espaçamento interno */
+  height: 80vh; /* Altura proporcional à tela */
+  width: 100%; /* Largura total */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
 
 .img-destaque {
-  flex: 1;
-  display: flex;
-  height: auto;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
+  flex: 1; /* Ocupa um espaço flexível */
+  display: flex; /* Layout flexível */
+  height: auto; /* Altura ajustável */
+  width: 50%; /* Largura relativa */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
 
-
 .text-destaque {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
+  flex: 1; /* Ocupa um espaço flexível */
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Disposição em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  gap: 2em; /* Espaçamento entre itens */
 }
 
 .text-destaque h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #005bab;
+  font-size: 2.5em; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #005bab; /* Azul */
 }
 
-.text-destaque p{
-  font-size: 1.5em;
-  font-weight: bold;
+.text-destaque p {
+  font-size: 1.5em; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
 }
 
 .button-destaque {
-  background-color: #005bab;
-  color: white;
-  width: 15em;
-  height: 3em;
-  font-size: 1.5em;
-  padding: 5px;
-  border-radius: 3em;
-  border: none;
-  cursor: pointer;
+  background-color: #005bab; /* Fundo azul */
+  color: white; /* Texto branco */
+  width: 15em; /* Largura fixa */
+  height: 3em; /* Altura fixa */
+  font-size: 1.5em; /* Tamanho da fonte */
+  padding: 5px; /* Espaçamento interno */
+  border-radius: 3em; /* Bordas arredondadas */
+  border: none; /* Remove borda */
+  cursor: pointer; /* Define ponteiro como clicável */
 }
 
 .button-destaque:hover {
-  background-color: #005096;
-  transform: scale(1.05);
+  background-color: #005096; /* Fundo azul escuro no hover */
+  transform: scale(1.05); /* Aumenta levemente no hover */
 }
-
-/*Produtos*/
-
+/* Estilo da seção de produtos */
 .products {
-  padding: 3em;
-  width: 100%;
-  background-color: #555555;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  padding: 3em; /* Espaçamento interno */
+  width: 100%; /* Largura total */
+  background-color: #555555; /* Fundo cinza escuro */
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Itens organizados em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  text-align: center; /* Centraliza o texto */
 }
 
 .products h1 {
-  font-size: 1.5em;
-  color: white;
-  font-weight: bold;
+  font-size: 1.5em; /* Tamanho do texto */
+  color: white; /* Cor do texto branco */
+  font-weight: bold; /* Texto em negrito */
 }
 
+/* Grid de produtos */
 .div-products {
-  padding: 2em;
-  gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 2em; /* Espaçamento interno */
+  gap: 20px; /* Espaçamento entre os itens */
+  display: grid; /* Exibe os itens como grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas ajustáveis */
 }
 
+/* Cartão de produto */
 .card-products {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  background-color: #c7c7c7;
-  border-radius: 10px;
-  justify-content: space-between;
+  padding: 5px; /* Espaçamento interno */
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Itens organizados em coluna */
+  background-color: #c7c7c7; /* Fundo cinza claro */
+  border-radius: 10px; /* Bordas arredondadas */
+  justify-content: space-between; /* Espaça os itens uniformemente */
 }
 
-.card-products:hover{
-  transform: scale(1.05);
+.card-products:hover {
+  transform: scale(1.05); /* Aumenta levemente o tamanho no hover */
 }
 
-.button-card{
-  left: 0;
-  bottom: 0;
-  background-color: #005bab;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  margin-top: auto;
+/* Botão no cartão de produto */
+.button-card {
+  left: 0; /* Alinha à esquerda */
+  bottom: 0; /* Posiciona no final */
+  background-color: #005bab; /* Fundo azul */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: none; /* Remove borda */
+  color: white; /* Texto branco */
+  margin-top: auto; /* Empurra para o final do cartão */
 }
 
-
-.card-products button:hover{
-  transform: scale(1.03);
-  background-color: #005096;
+.card-products button:hover {
+  transform: scale(1.03); /* Aumenta levemente no hover */
+  background-color: #005096; /* Fundo azul mais escuro no hover */
 }
 
-.card-products button a{
-  text-decoration: none;
+/* Links dentro dos botões */
+.card-products button a {
+  text-decoration: none; /* Remove sublinhado */
 }
 
-/*footer*/
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  left: 0;
-  height: 5vh;
-  background-color: #888888;
+/* Estilo do rodapé */
+footer {
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  bottom: 0; /* Posiciona no final */
+  left: 0; /* Alinha à esquerda */
+  height: 5vh; /* Altura proporcional à tela */
+  background-color: #888888; /* Fundo cinza médio */
 }
 
 /* Responsividade */
+
+/* Estilo para telas menores */
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: block; /* Exibe o ícone hambúrguer */
   }
 
   .nav-bar {
-    display: none;
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 100%;
-    background-color: #005bab;
-    flex-direction: column;
-    text-align: center;
+    display: none; /* Esconde a barra de navegação por padrão */
+    position: absolute; /* Posição absoluta */
+    top: 8vh; /* Distância do topo */
+    right: 0; /* Alinhado à direita */
+    width: 100%; /* Largura total */
+    background-color: #005bab; /* Fundo azul */
+    flex-direction: column; /* Itens organizados em coluna */
+    text-align: center; /* Centraliza o texto */
   }
 
   .nav-bar ul {
-    flex-direction: column;
+    flex-direction: column; /* Itens em coluna */
   }
 
   .nav-bar ul li {
-    margin: 10px 0;
+    margin: 10px 0; /* Espaçamento entre itens */
   }
 
   #menu-toggle:checked ~ .nav-bar {
-    display: flex;
+    display: flex; /* Exibe a barra de navegação ao marcar o checkbox */
   }
 
   .frame-destaque {
-    flex-direction: column;
+    flex-direction: column; /* Alinha os itens em coluna */
   }
 }
